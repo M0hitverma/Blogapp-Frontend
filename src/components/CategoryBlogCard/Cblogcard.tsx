@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
-import './CblogcardStyle.css'
+import './Cblogcardstyle.css'
 import Image from 'next/image'
 interface ParagraphData{
   title: string,
