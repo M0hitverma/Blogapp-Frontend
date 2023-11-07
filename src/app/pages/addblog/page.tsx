@@ -31,39 +31,6 @@ export default function AddBlog() {
 
   const [loading, setLoading]=useState(false);
 
-  const checkLogin = async()=>{
-
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/auth/checklogin`,{
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      credentials: 'include'
-    })
-    .then((res)=>{
-      return res.json();
-    })
-    .then((response)=>{
-      console.log(response);
-      if(response.ok){
-
-      }
-      else{
-         window.location.href="/pages/auth/signin";
-      }
-    })
-    .catch((error)=>{
-      console.log(error) ;
-      window.location.href="/pages/auth/sigin";
-    })
-
-  }
- useEffect(()=>{
-  checkLogin();
- },[]);
-
-
-
   const [blog,setBlog]=useState<FormData>({
     title: '',
     description: '',
