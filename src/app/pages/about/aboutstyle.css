@@ -1,0 +1,52 @@
+.about-container{
+    width: 100vw;
+   position: relative;
+   background-color: black;
+}
+.about-head{
+    position: relative;
+    width: 100%;
+    background-color:rgba(176, 173, 239, 0.833);
+    height: 400vh;
+     
+}
+.head-img{
+    left:50%;
+ 
+    position: sticky;
+    top:20%;
+    
+    width: 50%;
+}
+.head-content{
+    top:65vh;
+    left:2%;
+    font-size:11vw;
+    position: absolute;
+    color:white;
+    font-weight: 900;
+    opacity: 0.6;
+}
+.section1{
+    width:100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 5rem 1rem;
+   align-items: center;
+   gap:4rem;
+
+}
+.section1>p{
+  width:60%;
+   font-size: 2.4rem;
+   font-weight: 700;
+   
+}
+.section-img{
+   
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

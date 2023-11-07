@@ -1,0 +1,43 @@
+.blogcard{
+    height:30rem;
+    width:20rem;
+   display: flex;
+   position: relative;
+   cursor: pointer;
+   background-color: rgba(130, 127, 127, 0.903);
+   transition: all ease-in-out 0.5s;
+    color:black;
+  
+}
+
+.blogimg{
+    object-fit: contain;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    opacity: 0.7;
+
+}
+.blogcard:hover  {
+   background-color:black;
+  scale:0.9;
+  color:white;
+
+ 
+}
+.blogimg:hover {
+    opacity: 0.5;
+    
+}
+
+
+.blogtitle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:2rem;
+
+    translate: -50% -50%;
+ font-weight: 900;
+
+}

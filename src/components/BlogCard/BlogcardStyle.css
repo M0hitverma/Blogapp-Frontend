@@ -1,0 +1,44 @@
+.blogcard{
+    height:20rem;
+    width:20rem;
+   display: flex;
+   position: relative;
+   cursor: pointer;
+   /* background-color: rgba(106, 105, 105, 0.903); */
+   transition: all ease-in-out 0.5s;
+  background-color: black;
+  color: white;
+
+}
+
+.blogimg{
+    object-fit: contain;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    opacity: 0.8;
+   
+   
+}
+.blogcard:hover  {
+   background-color:white;
+  scale:0.9;
+  color:black;
+ 
+}
+.blogimg:hover {
+    opacity: 0.5;
+    border:3px solid rgb(66, 101, 106);
+}
+
+
+.blogtitle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:2rem;
+    /* color: rgb(41,40,40); */
+    translate: -50% -50%;
+ font-weight: 900;
+
+}

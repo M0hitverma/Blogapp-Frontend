@@ -1,0 +1,18 @@
+.category-container{
+    width:100vw;
+   
+    padding: 3rem;
+   }
+   .loaderfullpage{
+    height:70vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+   
+   }
+   .errorimage{
+     margin: auto;
+     width:60%;
+   }

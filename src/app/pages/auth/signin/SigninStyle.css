@@ -1,0 +1,74 @@
+.main-containersignin{
+    width: 70vw;
+
+    height:60vh;
+   
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    display: flex;
+    flex-direction: row;
+   
+     
+}
+.main-containersignin>.left{
+    position: relative;
+    width:40%;
+   height:100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.main-containersignin>.right{
+    position: relative;
+    width:60%;
+   height:100%;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.left-image{
+   
+    width:100%;
+    
+    
+}
+.right-form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:2rem;
+}
+.form-input-contianer{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+.form-input-contianer>label{
+    font-size: 2rem;
+
+}
+.inputfield>input{
+    font-size: 1.2rem;
+    padding:2px 20px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+}

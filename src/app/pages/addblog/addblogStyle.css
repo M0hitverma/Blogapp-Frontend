@@ -1,0 +1,53 @@
+.addblogmaincontainer{
+    width:100vw;
+   
+    padding:10px;
+    position: relative;
+  
+}
+
+.addblogcontainer{
+   
+    position:relative;
+    width:70%;
+    left:50%;
+    translate:-50%;
+    background-color: rgb(255, 255, 255);
+
+}
+.forminput-cont{
+    display: flex;
+    flex-direction: row;
+     align-items:flex-start;
+     justify-content:left;
+
+   
+}
+.forminput-cont>label{
+   font-weight:500;
+   color:black;
+   font-size:1.3rem;
+}
+.btncontainer{
+    width:100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+}
+.submitbtn{
+    
+    color:white; 
+    transition: all ease-in-out 0.5s;
+    
+} 
+.loaderfullpage{
+  position:absolute;
+   width: 100vw;
+   height:100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
