@@ -11,42 +11,16 @@ import { useEffect , useState } from 'react'
 
 export default function Home() {
 
-  const checkLogin = async()=>{
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/auth/checklogin`,{
-        method: 'GET',
-        headers: {
-                'Content-Type': 'application/json',
-        },
-        credentials: 'include'
-    })
-    .then((res)=>{
-        return res.json();
-    })
-    .then((response)=>{
-        if(response.ok){
-        }
-        else{
-                window.location.href="/pages/auth/signin"
-        }
-    })
-    .catch((error)=>{
-      window.location.href="/"
-    })
-  } 
-  useEffect(()=>{
-          checkLogin();
-       },[])
-  
 
 
 
   return (
     <main className="">
-    <Navbar/>
-    <HomeSlider/>
-    <CategorySlider/>
-    <BlogSlider/>
-    <Footer/>
+    <Navbar key={1}/>
+    <HomeSlider key={2}/>
+    <CategorySlider key={3}/>
+    <BlogSlider key={4}/>
+    <Footer key={5}/>
     </main>
   )
 }
