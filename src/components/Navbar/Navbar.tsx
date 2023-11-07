@@ -13,38 +13,7 @@ export const Navbar = () => {
  const [auth, setAuth]= useState<Boolean>(false);
  const [temp,setTemp]=useState<Boolean>(true);
   
- const checkLogin = async()=>{
-  fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/auth/checklogin`,{
-      method: 'GET',
-      headers: {
-              'Content-Type': 'application/json',
-      },
-      credentials: 'include'
-  })
-  .then((res)=>{
-      return res.json();
-  })
-  .then((response)=>{
-      if(response.ok){
-              setAuth(true);
-      }
-      else{
 
-              setAuth(false);
-              
-      }
-  })
-  .catch((error)=>{
-      toast(error.message,{
-              type: 'error',
-              position: 'top-right',
-              autoClose: 2000
-      })
-  })
-} 
-useEffect(()=>{
-        checkLogin();
-     },[])
 
 
 const handleLogout= async()=>{
