@@ -71,6 +71,15 @@ const handleLogout= async()=>{
  
       :
          <div className='navbar-right flex fles-row gap-8 justify-center items-center text-xl'>
+             <div className='right-menu' >
+                                 <BiMenu className='menu-icon'/>
+                                <div className='menu-list rounded-lg'>
+                                <Link className='menu-item text-slate-700' href="/">Home </Link>
+                                <Link  className='menu-item text-slate-700' href="/pages/about">About</Link>
+                                <Link className='menu-item text-slate-700' href="/pages/contact">Contact</Link>
+                                </div>
+                                </div>
+             
             <Link className='navbar-right-item' href="/pages/auth/signin">
                 <button>Login</button>
             </Link>
