@@ -134,7 +134,7 @@ export default function AddBlog() {
   }
 
   const uploadBlog = async()=>{
-    checkLogin();
+    
     if(!blog.title || !blog.description || !blog.category){
       toast('Please fill all required fields.',{
         type:'error',
