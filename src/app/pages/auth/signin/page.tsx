@@ -80,34 +80,7 @@ export default function Signin() {
   
   }
   const checkLogin = async()=>{
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/auth/checklogin`,{
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include'
-    })
-    .then((res)=>{
-      return res.json();
-    })
-    .then((response)=>{
-        console.log(response);
-        if(response.ok){
-          toast(response.message,{
-            type: 'success',
-            position:'top-right',
-            autoClose: 2000,
-          })
-         window.location.href ="/";
-        }else{
-
-        }
-    })
-    .catch((error)=>{
-      console.log(error);
-      
-    })
-     
+    window.location.href="/";
   }
 
   return (
